@@ -9,8 +9,8 @@ from datetime import datetime, timedelta
 #   JOVATRADING PRO — 4 Pares | 12 Indicadores | SL/TP | Backtesting
 # ═══════════════════════════════════════════════════════════
 
-API_KEY    = 'ekg9CUK8G6N2P6gxxh7xfN10QWKkb8nuRqd329b4c9tMNRgSXSsd3ZGUhCIiaDyM'.strip().replace('\n', '').replace(' ', '')
-SECRET_KEY = 'zYcWvR7e4tlsa2a3QIntNxW9mYXgwxe5v1LavPRY3WhpGy2SuIPNy4TgRZq1fA1A'.strip().replace('\n', '').replace(' ', '')
+API_KEY = os.environ.get('API_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 PARES = ['BTC/USDT', 'ETH/USDT', 'BNB/USDT', 'SOL/USDT']
 
