@@ -497,14 +497,7 @@ print(f'   Riesgo   : {RIESGO_PCT*100}% por operación')
 print(f'   Ratio    : 1:{RATIO_RIESGO} (TP/SL)')
 print(f'   Confianza mínima: {MIN_CONFIANZA}/12 indicadores')
 
-print('\n¿Deseas ejecutar el backtesting de 6 meses primero? (s/n): ', end='')
-respuesta = input().strip().lower()
-if respuesta == 's':
-    ejecutar_backtesting()
-    print('\n¿Continuar con el bot en vivo? (s/n): ', end='')
-    if input().strip().lower() != 's':
-        print('Bot detenido.')
-        exit()
+ejecutar_backtesting()
 
 print('\n▶️  Iniciando bot en vivo...\n')
 
